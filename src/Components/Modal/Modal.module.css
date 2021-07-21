@@ -1,0 +1,57 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 0px;
+  min-height: 0px;
+  padding: 20px;
+  border-radius: 5px;
+
+  background-color: rgba(199, 199, 199, 0.836);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+
+  transition: all 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 1;
+}
+
+.icon {
+  width: 35px;
+  height: auto;
+}

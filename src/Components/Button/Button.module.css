@@ -1,0 +1,26 @@
+.button {
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
+
+  transform: translateX(-50%);
+
+  width: 120px;
+  height: 30px;
+  margin-right: 20px;
+
+  border-radius: 5px;
+  border: 2px solid rgba(84, 22, 155, 0.61);
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(4, 199, 118, 0.829);
+  font-size: 20px;
+
+  transition: all 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgba(84, 22, 155, 0.61);
+  color: white;
+}
