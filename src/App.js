@@ -46,7 +46,13 @@ class App extends Component {
           }));
         })
         .catch(() => this.setState({ status: "rejected" }))
-        .finally(() => this.setState({ loader: false }));
+        .finally(() => {
+          this.setState({ loader: false });
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth",
+          });
+        });
     }
   }
 
@@ -76,11 +82,6 @@ class App extends Component {
   setPage = () => {
     this.setState((prevState) => {
       return { page: prevState.page + 1 };
-    });
-
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
     });
   };
 
